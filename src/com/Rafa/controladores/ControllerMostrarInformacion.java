@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.Rafa.negocio.ClsUsuarios;
 import com.google.gson.Gson;
 
 /**
@@ -44,6 +45,10 @@ public class ControllerMostrarInformacion extends HttpServlet {
 	  //	doGet(request, response);
 		
 		Gson json = new Gson();
+		
+		ClsUsuarios cls = new ClsUsuarios();
+		
+		response.getWriter().append(json.toJson(cls.MostrarUsuario()));
 	}
 
 }

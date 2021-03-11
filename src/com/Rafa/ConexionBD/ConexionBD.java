@@ -9,7 +9,7 @@ public class ConexionBD {
 	public ConexionBD() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3307/appbanco", "root", "root");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3308/appbanco", "root", "root");
 			System.out.println("CONECTADO A LA BD");
 
 		} catch (Exception e) {

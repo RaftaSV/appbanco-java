@@ -10,20 +10,20 @@
 <body>
 	<h1>WELLCOME</h1>
 	<script type="text/javascript">
-	$(document).ready(function){
+	
+	$(document).ready(function(){
 		
 		$.post('ControllerMostrarInformacion',{
 			//Enviar informacion
 			
-		},function(response){
+		}, function(response){
 			//Recibir informacion
 			
 			let datos = JSON.parse(response);
 			
 			console.log(datos);
 			
-		}
-		);
+		});
 	});
 	
 	</script>
